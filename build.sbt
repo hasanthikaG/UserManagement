@@ -5,8 +5,10 @@ ThisBuild / scalaVersion := "2.13.12"
 lazy val root = (project in file("."))
   .settings(
     name := "UserManagement"
-  ).settings(
+  )
+  .settings(
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-core" % "2.9.0"
+      "org.typelevel"              %% "cats-core" % "2.9.0",
+      "com.softwaremill.quicklens" %% "quicklens" % "1.8.10",
     )
   )
